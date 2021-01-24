@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
     <header class="cabecera">
@@ -24,12 +24,12 @@
             <h2 class="seccion__h2 ">
                 Diseño y desarrollo Web Freelancer
                 <p class="seccion__p ">Paraiso de Osorio, La paz</p>
-                <button type="button" class="seccion__boton button">Contactar</button>
+                <button type="button" class="seccion__boton button"> <a href="#contact"> Contactar</a></button>
             </h2>
         </div>
     </section>
 
-    <main class="Servicios">
+    <main class="Servicios sombra">
         <div class="text">
             <h2 class="servicios__h2">Mis servicios</h2>
         </div>
@@ -50,8 +50,32 @@
                 <p class="Servicios__section-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt provident fuga voluptatem labore molestias distinctio sunt vero alias, qui quasi numquam officiis a dolor minima animi hic aliquid dolore non.</p>
             </section>
         </div>
-        <section class="Contacto">
+        <section class="Contacto" id="contact">
             <h2 class="contacto__h2">Contacto</h2>
+        <form class="formulario">
+            <fieldset >
+                <legend>Contactame llenando todos los campos</legend>
+                <div>
+                    <label for="">nombre</label>
+                    <input type="text" placeholder="Tu nombre">
+                </div>
+                <div>
+                    <label for="">telefono</label>
+                    <input type="tel" placeholder="tu telefono">
+                </div>
+                <div>
+                    <label for="">correo</label>
+                    <input type="email" placeholder="correo">
+                </div>
+                <div>
+                    <label for="">Mensaje</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="enviar">
+                </div>
+            </fieldset>                
+        </form>
         </section>
     </main>
 
